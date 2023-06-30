@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.index_body{
+ background-image: url('../img/back.jpg');
+ background-size: 100% 650px ;
+
+}
+.background{
+    background: #2B2B2B url('../img/nav-back.jpg') ;
+    background-repeat: repeat-x round;
+    background-blend-mode: soft-light;
+    min-width: 1080px;
+}
+
+.navbar{
+    display: flex;
+    height: 80px;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 10px black;
+    z-index: 100;
+}
+.pad {
+    margin-top: 80px;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+}
+.nav-list img{
+    margin-top: -5px;
+    width: 50px;
+    height: 50px;
+    background-color: antiquewhite;
+    border-radius: 100%;
+    transition: 0.2s ease-in-out 0s;
+}
+.nav-list img:hover{
+    transform: scale(1.01);
+}
+.nav-list a, .acopy{
+    text-decoration: none;
+    font-size: 19px;
+    color: beige;
+}
+.nav-list a:hover, .acopy:hover{
+    text-decoration-line: underline;
+    text-shadow: 0px 0px 5px indianred;
+}
+.nav-list li{
+    list-style: none;
+    padding: 20px 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: 0.2s ease-in-out 0s;
+}
+.nav-list li:hover{
+    transform: scale(1.1);
+}
+.right{
+    background-color: white;
+    margin: auto 60px auto auto !important;
+    width: 160px;
+    height: 30px;
+    border-radius: 15px;
+}
+#search{
+    border: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 10px;
+    padding-right: -10px;
+    outline: none;
+}
+.search-btn {
+    background-color: white;
+    border: 0px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: auto;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+.search-btn div img {
+    margin-left: 5px;
+    transition: 0.2s ease-in-out 0s;
+    padding-right: 2px;
+}
+.search-btn div img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    margin-top: 20px;
+}
+#query{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    outline-color: cornflowerblue;
+}
+.contact .form h1{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    letter-spacing: 0.05em;
+}
+.submit{
+    display: flex;
+    align-content: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#submit{
+    width: 120px;
+    height: 30px;
+    border: solid 1.5px cornflowerblue;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: auto;
+    color: cornflowerblue;
+    transition: 0.2s ease-in-out 0s;
+}
+#submit:hover {
+    background-color: cornflowerblue;
+    color: white;
+    transform: scale(1.1);
+}
+#slider {
+	overflow: hidden;
+}
+.training{
+    display: flex;
+    padding-top: 100px;
+}
+.training .left{
+    width: 50%;
+}
+.training .left img{
+    width: 500px;
+    
+}
+.training .right{
+    width: 50%;
+    
+}
+.training .right h1{
+    padding: 20px  20px;
+    font-size: 40px;
+    color: red;
+}
+.training .right p{
+    padding: 20px  20px;
+    font-size: 20px;
+}
+.dog-train{
+    background-color: rgb(176, 248, 224);
+    width: 70%;
+    margin-left: 0;
+    margin-right: 0;
+    display: block; 
+}
+.menu-box {
+    margin-left: 40px;
+}
+
+
+ /* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+/*  padding: 16px;*/
+/*  font-size: 16px;*/
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd; border-radius: 10px}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;} 
+
+.anew {
+    text-shadow: none;
+}
+
+.divider {
+    margin-bottom: 60px;
+}

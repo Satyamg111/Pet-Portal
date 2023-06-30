@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+body{
+    font-family: 'Quicksand',sans-serif;
+    background-image: url("back.jpg");
+    background-size: 100% 700px;    
+}
+
+.underline{
+    height:3px;
+    width:100px;
+    background-color: #f79410;
+}
+.btn:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
+.btn-primary{
+    background-color:#fff!important;
+    border:none;
+}
+.btn-primary:hover{
+    background-color: #f79410!important;
+    color: #fff !important;
+}
+.product-item{
+    border:1px solid #ebebeb;
+    border-radius: 4px;
+    position: relative;
+}
+.product-img:hover::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 1;
+    box-shadow: 20px 20px 100px -50px #000;
+    transition: 0.3s;
+}
+.container{
+    margin: auto;
+    text-align: center;
+    height: 620px;
+    position: relative;
+    padding-left: 150px; 
+    padding-right: 0px;
+/*    overflow-y: scroll;*/
+    margin-left: 30px;
+    padding-top: 80px;
+}
+
+.text-center, .dog, .cat, .rabbit {
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+/*img {
+    border-radius: 10px;
+}*/

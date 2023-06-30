@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+ background-image: url('../img/back.jpg');
+ background-size: 100% 650px ;
+}
+.training{
+    display: flex;
+    
+}
+.training .left{
+    width: 50%;
+}
+.training .left img{
+    width: 500px;
+    /* margin-top: -130px; */
+}
+.training .right{
+    width: 50%;
+}
+.training .right h1{
+    font-size: 40px;
+    color: #303030;
+    margin-top: -220px;
+    padding: 20px 0;
+}
+.training .right p{
+    font-size: 20px;
+    padding: 20px 0;
+}
+.dog-train{
+    margin-top: 0;
+    background-color: rgb(238, 253, 248);
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(238, 253, 248);
+}
+.dog-train h1{
+    margin-top: 30px;
+    font-size: 40px;
+    padding-top: 30px;
+}
+.dog-train p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.dog-train img{
+    width: 300px;
+}
+.right-btm{
+    padding: 5px;
+    width:550px; 
+}
+.r-btm {
+    display: flex;
+    width:550px; 
+}
+
+.r-btm img{
+    width: 100px;
+}
+.r-btm p{
+    width: 200px;
+}
+
+.enquiry{
+    margin-top: 50px;
+}
+.enquiry button{
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(242, 245, 247);
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #b9acac;
+    cursor: pointer;
+}
+.enquiry a{
+    text-decoration: none;
+    color: #303030;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.enquiry button:hover{
+    font-size: 21px;
+    color: white;
+    background-color: #837e7e;
+    border: none;
+}
+.pets img{
+    margin: 50px 50px;
+}

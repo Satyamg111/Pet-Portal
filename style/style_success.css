@@ -1,0 +1,109 @@
+.main {
+    margin: auto;
+    text-align: center;
+    width: 1000px;
+}
+
+img {
+    display: block;
+}
+
+fieldset {
+    margin: auto;
+    margin-top: 80px;
+    border: none;
+    border-top: 20px solid #999;
+    width: 100%;
+/*    text-align: center;*/
+}
+
+legend {
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.containerb {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    width: 650px;
+}
+
+.left {
+    display: block;
+/*    margin: auto;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 35%;
+    text-align: left;
+}
+
+.left img {
+    width: 300px;
+    height: 200px;
+}
+
+.righta {
+    display: block;
+    margin-left: 0px;
+/*    margin: auto;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 65%;
+    text-align: left;
+}
+
+.righta img {
+    width: 640px;
+    height: 200px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.leftb {
+    display: block;
+/*    margin: auto;*/
+    padding-right: 10px;
+    width: 50%;
+    text-align: left;
+}
+
+.leftb img, .rightb img {
+    height: 200px;
+    width: 300px;
+}
+
+
+.rightb {
+    display: block;
+/*    margin: auto;*/
+    padding-left: 10px;
+    width: 50%;
+    text-align: left;
+}
+
+.divider {
+    border-top: 10px solid #999;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

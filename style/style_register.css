@@ -1,0 +1,83 @@
+.box h2{
+    margin: 40px 0 30px;
+    padding: 0px;
+    color:#380e0e;
+    text-align: center;
+}
+.box {
+   margin-top: 40px;
+}
+
+.box .ipbox{
+    position: relative;
+ }
+ .box .ipbox input{
+    width:100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #380e0e;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    outline:none;
+    background: transparent;
+    border-bottom: 1px solid steelblue;
+ }
+ label{
+    position: relative;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #330369;
+    
+ }
+ .box .ipbox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: steelblue;
+    transition: .5s;
+ }
+ .box .ipbox input:focus ~ label,.box .ipbox input:valid ~ label{
+    top:-18px;
+    left:0px;
+    color:steelblue;
+    font-size: 12px;
+ }
+
+
+.form{
+/*    display: flex;*/
+/*    justify-content: center;*/
+    margin-top: 120px;
+    padding-left: 25px;
+    padding-right: 25px;
+/*    width: 30%;*/
+/*    height: 400px;*/
+/*    background-color: #2B2B2B;*/
+    border: solid black 1px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px #999;
+    text-align: center;
+    width: 300px;
+}
+#submit{
+    width: 80px;
+    height: 30px;
+    border: solid 1.5px steelblue;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: auto;
+    color: forestgreen;
+    transition: 0.2s ease-in-out 0s;
+}
+#submit:hover {
+    background-color: steelblue;
+    color: white;
+    transform: scale(1.1);
+}
