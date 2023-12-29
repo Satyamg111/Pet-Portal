@@ -2,20 +2,22 @@
     margin: 0;
     padding: 0;
 }
-body{
- background-image: url('../img/back.jpg');
- background-size: 100% 650px ;
-}
 .training{
+    background-color: rgb(238, 253, 248);
+    width: 100%;
     display: flex;
-    
 }
 .training .left{
     width: 50%;
 }
 .training .left img{
-    width: 500px;
-    /* margin-top: -130px; */
+    width: 80%;
+    filter: drop-shadow(1px 20px 5px black);
+    transition: all 0.5s;
+}
+.training .left img:hover{
+    filter: drop-shadow(1px 25px 5px black);
+    transform: translateY(-10px);
 }
 .training .right{
     width: 50%;
@@ -23,7 +25,6 @@ body{
 .training .right h1{
     font-size: 40px;
     color: #303030;
-    margin-top: -220px;
     padding: 20px 0;
 }
 .training .right p{
@@ -61,6 +62,10 @@ body{
 
 .r-btm img{
     width: 100px;
+    transition: transform .5s;
+}
+.r-btm img:hover{
+    transform: scale(1.1);
 }
 .r-btm p{
     width: 200px;
@@ -89,6 +94,14 @@ body{
     background-color: #837e7e;
     border: none;
 }
+.pets{
+    margin: 10px;
+    transition: all .5s;
+}
 .pets img{
     margin: 50px 50px;
+}
+.pets:hover{
+    transform: scale(1.01);
+    filter: drop-shadow(0 20px 5px black);
 }

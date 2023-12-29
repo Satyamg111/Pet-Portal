@@ -1,7 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .main {
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
-    width: 1000px;
 }
 
 img {
@@ -9,12 +13,10 @@ img {
 }
 
 fieldset {
-    margin: auto;
     margin-top: 80px;
     border: none;
     border-top: 20px solid #999;
     width: 100%;
-/*    text-align: center;*/
 }
 
 legend {
@@ -28,10 +30,9 @@ legend {
 
 .container {
     display: flex;
-    flex-direction: row;
-    justify-self: center;
-    width: 1000px;
-    margin-top: 30px;
+    width: 100%;
+    margin: 30px;
+    /* background-color: rgba(0, 0, 0, 0.226); */
 }
 
 .containerb {
@@ -46,7 +47,7 @@ legend {
 /*    margin: auto;*/
     padding-left: 15px;
     padding-right: 15px;
-    width: 35%;
+    width: 40%;
     text-align: left;
 }
 
@@ -57,17 +58,15 @@ legend {
 
 .righta {
     display: block;
-    margin-left: 0px;
 /*    margin: auto;*/
     padding-left: 15px;
     padding-right: 15px;
-    width: 65%;
+    width: 50%;
     text-align: left;
 }
 
 .righta img {
-    width: 640px;
-    height: 200px;
+    width: 600px;
 }
 
 h2 {
@@ -96,9 +95,8 @@ p {
 
 .rightb {
     display: block;
-/*    margin: auto;*/
     padding-left: 10px;
-    width: 50%;
+    width: 40%;
     text-align: left;
 }
 
