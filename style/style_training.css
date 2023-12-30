@@ -20,44 +20,23 @@
     transform: translateY(-10px);
 }
 .training .right{
+    position: relative;
     width: 50%;
 }
 .training .right h1{
-    font-size: 40px;
+    font-size: 35px;
     color: #303030;
     padding: 20px 0;
 }
 .training .right p{
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px 0;
 }
-.dog-train{
-    margin-top: 0;
-    background-color: rgb(238, 253, 248);
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 0 20px rgb(238, 253, 248);
-}
-.dog-train h1{
-    margin-top: 30px;
-    font-size: 40px;
-    padding-top: 30px;
-}
-.dog-train p{
-    margin-top: 20px;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.dog-train img{
-    width: 300px;
-}
 .right-btm{
-    padding: 5px;
-    width:550px; 
+    /* padding: 5px;  */
 }
 .r-btm {
-    display: flex;
-    width:550px; 
+    display: flex; 
 }
 
 .r-btm img{
@@ -68,7 +47,7 @@
     transform: scale(1.1);
 }
 .r-btm p{
-    width: 200px;
+    margin-top: 20px;
 }
 
 .enquiry{
@@ -94,6 +73,27 @@
     background-color: #837e7e;
     border: none;
 }
+.dog-train{
+    margin-top: 0;
+    background-color: rgb(238, 253, 248);
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(238, 253, 248);
+}
+.dog-train h1{
+    margin-top: 30px;
+    font-size: 40px;
+    padding-top: 30px;
+}
+.dog-train p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.dog-train img{
+    width: 300px;
+}
+
 .pets{
     margin: 10px;
     transition: all .5s;

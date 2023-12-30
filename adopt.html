@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
+     <title>Adopt</title>
+    <link rel="stylesheet" href="style/nav-style.css">
     <link rel="stylesheet" href="style/adopt.css">
     
 </head>
@@ -36,416 +34,404 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="register.html">Register</a></li>
         </ul>
-        <!-- <div class="navbar right">
-          <input type="text" name="" id="search">
-          <button type="button" class="search-btn">
-           <div>
-             <img src="img/search.png" height="15px" width="15px">
-           </div>
-          </button>
-        </div> -->
     </nav>
 </div>
-
-
-
 
     <!-- <button type="button" class="btn btn-dark" onclick="fun()">Search</button> -->
     <div class ="container">
         <div class="row">
-            <div class="col text-center my-4">
-                <h1 class="fs-2">ADOPT US</h1>
-                <div class="input-group-append">
-                    
-                <div class="underline mx-auto mt-3"></div>
-                </div>
+            <div class="heading">
+                <h1>ADOPT US</h1>
             </div>
          </div>   
-            <div class="row mt-3 mb-4 button-group filter-button-group">
+            <div class="type-btn">
                 <div class="col d-flex justify-content-center">
-                   <button type="button" data-filter="*" class="btn-primary mx-1 text-dark">ALL</button>
-                   <button type="button" data-filter=".dog" class="btn-primary mx-1 text-dark">DOGS</button>
-                   <button type="button" data-filter=".cat" class="btn-primary mx-1 text-dark">CATS</button>
-                   <button type="button" data-filter=".rabbit" class="btn-primary mx-1 text-dark">RABBITS</button>
+                   <button type="button" id="0" data-filter="*" onclick="func(0)" class="btn active">ALL</button>
+                   <button type="button" id="1" data-filter=".dog" onclick="func(1)" class="btn">DOGS</button>
+                   <button type="button" id="2" data-filter=".cat" onclick="func(2)" class="btn">CATS</button>
+                   <button type="button"  id="3" data-filter=".rabbit" onclick="func(3)" class="btn">RABBITS</button>
+                   <span><input type="text" id="search"><input type="submit" value="Search" class="btn" onclick="searchPet()"></span>
+                  </div>
             </div>
         </div>
-        <div class="row justify-content-center g-4" id="product-list">
-            <div class="col-lg-4 col-md-6 dog">
+        <div class="row" id="row">
+            <div class="dog">
               <div class="product-item">
                 <div class="product-img">
-                    <img src="dg//am.jpg" class="img-fluid d-block mx-auto">
+                    <img src="dg/am.jpg" class="img-fluid pet-text mx-auto">
                 </div>
-                <div class="product-content text-center py-3"></div>
-                    <span class="d-block text-uppercase fw-bold">BREED : Alaskan Malamute</span>
-                    <span class="d-block">Capsio</span>
+                <div class="pet-detail"></div>
+                    <p><span class="breed-text">BREED : Alaskan Malamute</span></p>
+                    <p><span class="pet-text">Capsio</span></p>
               </div>
             </div>
             
-            <div class="col-lg-4 col-md-6 cat">
+            <div class="cat">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="cat//Ragdoll.jpg" class="img-fluid d-block mx-auto">
+                      <img src="cat/Ragdoll.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Ragdoll</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Ragdoll</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//chihuahua.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/chihuahua.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : chihuahua</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : chihuahua</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 rabbit">
+              <div class="rabbit">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="rab//PR.jpg" class="img-fluid d-block mx-auto">
+                      <img src="rab/PR.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Polish rabbit</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Polish rabbit</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//AM2.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/AM2.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Alaskan Malamute</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Alaskan Malamute</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
               
-              <div class="col-lg-4 col-md-6 dog ">
+              <div class="  dog ">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//AKTA2.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/AKTA2.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <h5 class="d-block text-uppercase fw-bold">BREED : AKITA</h5>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <h5 class="breed-text">BREED : AKITA</h5>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="  dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//AKITA2B.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/AKITA2B.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : AKITA</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : AKITA</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="  dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//SAMC.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/SAMC.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Samoyed</span>
-                      <span class="d-block">Capsio</span>
-                </div>
-              </div><div class="col-lg-4 col-md-6 dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg//SAMC2.jpg" class="img-fluid d-block mx-auto">
-                  </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Samoyed</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Samoyed</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="  dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//RLD.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/SAMC2.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Retrievers(Labrador)</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Samoyed</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="  dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//RLD2.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/RLD.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Retrievers(Labrador)</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Retrievers(Labrador)</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="  dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//RLD3.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/RLD2.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Retrievers(Labrador)</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Retrievers(Labrador)</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="  dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//FBE.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/RLD3.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : French Bulldogs</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Retrievers(Labrador)</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="  dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//FBE2.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/FBE.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : French Bulldogs</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : French Bulldogs</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="  dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//GRF.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/FBE2.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Retrievers(Golden)</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : French Bulldogs</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="  dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//GRF2.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/GRF.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Retrievers(Golden)</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Retrievers(Golden)</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="  dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//GS1.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/GRF2.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : German Shepherd</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Retrievers(Golden)</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 dog">
+              <div class="  dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="dg//GS2.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/GS1.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : German Shepherd</span>
-                      <span class="d-block">Capsio</span>
-                </div>
-              </div><div class="col-lg-4 col-md-6 dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg//BEAG.jpg" class="img-fluid d-block mx-auto">
-                  </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Beagles</span>
-                      <span class="d-block">Capsio</span>
-                </div>
-              </div><div class="col-lg-4 col-md-6 dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg//BEAG2.jpg" class="img-fluid d-block mx-auto">
-                  </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Beagles</span>
-                      <span class="d-block">Capsio</span>
-                </div>
-              </div><div class="col-lg-4 col-md-6 dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg//BD.jpg" class="img-fluid d-block mx-auto">
-                  </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Bulldogs</span>
-                      <span class="d-block">Capsio</span>
-                </div>
-              </div><div class="col-lg-4 col-md-6 dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg//SH.jpg" class="img-fluid d-block mx-auto">
-                  </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Siberian Husky</span>
-                      <span class="d-block">Capsio</span>
-                </div>
-              </div><div class="col-lg-4 col-md-6 dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg//SCH.jpg" class="img-fluid d-block mx-auto">
-                  </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Shichon</span>
-                      <span class="d-block">Capsio</span>
-                </div>
-              </div><div class="col-lg-4 col-md-6 dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg//BX.jpg" class="img-fluid d-block mx-auto">
-                  </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : BOXER</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : German Shepherd</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 cat">
+              <div class="  dog">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="cat//ABS.jpg" class="img-fluid d-block mx-auto">
+                      <img src="dg/GS2.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Abyssinian</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : German Shepherd</span>
+                      <span class="pet-text">Capsio</span>
+                </div>
+              </div><div class="  dog">
+                <div class="product-item">
+                  <div class="product-img">
+                      <img src="dg/BEAG.jpg" class="img-fluid pet-text mx-auto">
+                  </div>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Beagles</span>
+                      <span class="pet-text">Capsio</span>
+                </div>
+              </div><div class="  dog">
+                <div class="product-item">
+                  <div class="product-img">
+                      <img src="dg/BEAG2.jpg" class="img-fluid pet-text mx-auto">
+                  </div>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Beagles</span>
+                      <span class="pet-text">Capsio</span>
+                </div>
+              </div><div class="  dog">
+                <div class="product-item">
+                  <div class="product-img">
+                      <img src="dg/BD.jpg" class="img-fluid pet-text mx-auto">
+                  </div>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Bulldogs</span>
+                      <span class="pet-text">Capsio</span>
+                </div>
+              </div><div class="  dog">
+                <div class="product-item">
+                  <div class="product-img">
+                      <img src="dg/SH.jpg" class="img-fluid pet-text mx-auto">
+                  </div>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Siberian Husky</span>
+                      <span class="pet-text">Capsio</span>
+                </div>
+              </div><div class="  dog">
+                <div class="product-item">
+                  <div class="product-img">
+                      <img src="dg/SCH.jpg" class="img-fluid pet-text mx-auto">
+                  </div>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Shichon</span>
+                      <span class="pet-text">Capsio</span>
+                </div>
+              </div><div class="  dog">
+                <div class="product-item">
+                  <div class="product-img">
+                      <img src="dg/BX.jpg" class="img-fluid pet-text mx-auto">
+                  </div>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : BOXER</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 cat">
+              <div class="  cat">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="cat//AS.jpg" class="img-fluid d-block mx-auto">
+                      <img src="cat/ABS.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : American Shorthair </span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Abyssinian</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 cat">
+              <div class="  cat">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="cat//BS.jpg" class="img-fluid d-block mx-auto">
+                      <img src="cat/AS.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : British Shorthair</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : American Shorthair </span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 cat">
+              <div class="  cat">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="cat//DR.jpg" class="img-fluid d-block mx-auto">
+                      <img src="cat/BS.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Devon Rex</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : British Shorthair</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 cat">
+              <div class="  cat">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="cat//ES.jpg" class="img-fluid d-block mx-auto">
+                      <img src="cat/DR.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Exotic Shorthair</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Devon Rex</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 cat">
+              <div class="  cat">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="cat//Maine-Coon-Cat.jpg" class="img-fluid d-block mx-auto">
+                      <img src="cat/ES.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Maine Coon</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Exotic Shorthair</span>
+                      <span class="pet-text">Capsio</span>
+                </div>
+              </div>
+              <div class="  cat">
+                <div class="product-item">
+                  <div class="product-img">
+                      <img src="cat/Maine-Coon-Cat.jpg" class="img-fluid pet-text mx-auto">
+                  </div>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Maine Coon</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div> 
-              <div class="col-lg-4 col-md-6 cat">
+              <div class="  cat">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="cat//PC.jpg" class="img-fluid d-block mx-auto">
+                      <img src="cat/PC.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Persian</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Persian</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
               
-              <div class="col-lg-4 col-md-6 cat">
+              <div class="  cat">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="cat//SF.jpg" class="img-fluid d-block mx-auto">
+                      <img src="cat/SF.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Scottish Fold</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Scottish Fold</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 cat">
+              <div class="  cat">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="cat//SPY.jpg" class="img-fluid d-block mx-auto">
+                      <img src="cat/SPY.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Sphynx</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Sphynx</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 rabbit">
+              <div class="  rabbit">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="rab//AR.jpg" class="img-fluid d-block mx-auto">
+                      <img src="rab/AR.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Angora rabbit</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Angora rabbit</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 rabbit">
+              <div class="  rabbit">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="rab//CGR.jpg" class="img-fluid d-block mx-auto">
+                      <img src="rab/CGR.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Checkered Giant rabbit</span>
-                      <span class="d-block">Capsio</span>
-                </div>
-              </div>
-              
-              <div class="col-lg-4 col-md-6 rabbit">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="rab//FL.jpg" class="img-fluid d-block mx-auto">
-                  </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : French Lop</span>
-                      <span class="d-block">Capsio</span>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 rabbit">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="rab//NDR.jpg" class="img-fluid d-block mx-auto">
-                  </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Netherland Dwarf rabbit</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Checkered Giant rabbit</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
               
-              <div class="col-lg-4 col-md-6 rabbit">
+              <div class="  rabbit">
                 <div class="product-item">
                   <div class="product-img">
-                      <img src="rab//RR.jpg" class="img-fluid d-block mx-auto">
+                      <img src="rab/FL.jpg" class="img-fluid pet-text mx-auto">
                   </div>
-                  <div class="product-content text-center py-3"></div>
-                      <span class="d-block text-uppercase fw-bold">BREED : Rex rabbit</span>
-                      <span class="d-block">Capsio</span>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : French Lop</span>
+                      <span class="pet-text">Capsio</span>
+                </div>
+              </div>
+              <div class="  rabbit">
+                <div class="product-item">
+                  <div class="product-img">
+                      <img src="rab/NDR.jpg" class="img-fluid pet-text mx-auto">
+                  </div>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Netherland Dwarf rabbit</span>
+                      <span class="pet-text">Capsio</span>
+                </div>
+              </div>
+              
+              <div class="  rabbit">
+                <div class="product-item">
+                  <div class="product-img">
+                      <img src="rab/RR.jpg" class="img-fluid pet-text mx-auto">
+                  </div>
+                  <div class="pet-detail"></div>
+                      <span class="breed-text">BREED : Rex rabbit</span>
+                      <span class="pet-text">Capsio</span>
                 </div>
               </div>
              
@@ -453,9 +439,6 @@
         </div>
     </div>
     <!-- isotope plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-    <script src="script/adopt.js"></script  >
+    <script src="script/adopt.js"></script>
 </body>
 </html>

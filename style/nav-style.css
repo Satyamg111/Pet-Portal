@@ -1,3 +1,6 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .navigation{
     width: 100%;
     height: 100px;
@@ -57,8 +60,6 @@ nav {
  .dropbtn {
     background-color: #04AA6D;
     color: white;
-  /*  padding: 16px;*/
-  /*  font-size: 16px;*/
     border: none;
   }
   

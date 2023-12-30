@@ -1,63 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
-
-body{
-    font-family: 'Quicksand',sans-serif;
-    background-image: url("back.jpg");
-    background-size: 100% 700px;    
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    font-family: 'Quicksand',sans-serif; 
+} */
+.container{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+.heading h1{
+    text-decoration: underline orange;
+}
+.type-btn .btn{
+    width: 100px;
+    margin: 20px 20px;
+    padding: 5px 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+    transition: .5s;
+}
+.type-btn .active{
+    background-color: rgba(255, 180, 40, 0.87);
+}
+.type-btn .btn:hover{
+    background-color: rgba(255, 180, 40, 0.87);
 }
 
-.underline{
-    height:3px;
-    width:100px;
-    background-color: #f79410;
-}
-.btn:focus{
-    outline: none!important;
-    box-shadow: none!important;
-}
-.btn-primary{
-    background-color:#fff!important;
-    border:none;
-}
-.btn-primary:hover{
-    background-color: #f79410!important;
-    color: #fff !important;
+.row .cat, .dog, .rabbit{
+    display: inline-block;
+    width: 20%;
+    margin: 20px;
 }
 .product-item{
+    width: 100%;
     border:1px solid #ebebeb;
     border-radius: 4px;
-    position: relative;
 }
-.product-img:hover::after{
-    content:"";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100%;
-    height:100%;
-    background-color: rgba(0,0,0,0.1);
-    z-index: 1;
-    box-shadow: 20px 20px 100px -50px #000;
-    transition: 0.3s;
-}
-.container{
-    margin: auto;
-    text-align: center;
-    height: 620px;
-    position: relative;
-    padding-left: 150px; 
-    padding-right: 0px;
-/*    overflow-y: scroll;*/
-    margin-left: 30px;
-    padding-top: 80px;
+.product-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.text-center, .dog, .cat, .rabbit {
+.pet-detail .breed-text,.pet-text p{
     margin: auto;
+    font-size: 10px;
     text-align: center;
     margin-top: 10px;
     border-radius: 20px;
 }
-/*img {
-    border-radius: 10px;
-}*/
+#row .hidden{
+    display: none;
+}
