@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Portal</title>
-    <link rel="stylesheet" type="text/css" href="style/nav-style.css">
-    <link rel="stylesheet" type="text/css" href="style/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Portal</title>
+  <link rel="stylesheet" type="text/css" href="style/nav-style.css">
+  <link rel="stylesheet" type="text/css" href="style/index.css">
 </head>
+
 <body>
-    <div class="navigation">
-        <nav class="navbar nav-small">
-          <ul class="nav-list">
-              <li><a href="index.html"><img src="img/pp.png" class="logo" alt="logo"></a></li>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="adopt.html">Adopt</a></li>
-              <li><a href="training.html">Training</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li style="color: white; font-size: 1.5em;">|</li>
-              <li><a href="contact.html">Contact</a></li>
-              <li class="acopy">
-                <div class="dropdown">
-                    About
-                  <div class="dropdown-content">
-                    <a class="anew" href="about.html">About Us</a>
-                    <a class="anew" href="success.html">Success Stories</a>
-                    <a class="anew" href="ourTeam.html">Our Team</a>
-                  </div>
-                </div>
-              </li>
-              <li style="color: white; font-size: 1.5em;">|</li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="register.html">Register</a></li>
-          </ul>
 
-      </nav>
-</div>
+  <div class="navigation">
+    <nav class="navbar nav-small">
+      <ul class="nav-list">
+        <li class="logo-hidden"><a href="index.html"><img src="img/pp.png" class="logo" alt="logo"></a></li>
+        <!-- <li class="logo-hidden show-nav" onclick="modNavbar()">show-nav</li> -->
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="acopy">
+          <div class="dropdown">
+            About
+            <div class="dropdown-content">
+              <a class="anew" href="about.html">About Us</a>
+              <a class="anew" href="success.html">Success Stories</a>
+              <a class="anew" href="ourTeam.html">Our Team</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <!-- <li><img src="img/logo.png" onclick="modNavbar()" class="logo hidden-logo" alt=""></li> -->
+      </ul>
 
- <!-- Slideshow container -->
-<div class="slideshow-container">
-  <!-- Full-width images with number and caption text -->
-      <div class="slider">
-        <div class="mySlides fade">
-          <!-- <span class="numbertext">1 / 6</span> -->
-          <p><span class="text">Adopted Today</span></p>
-          <img src="slide_img/img1.jpg">
-        </div>
-  
-        <div class="mySlides fade">
-          <!-- <span class="numbertext">2 / 6</span> -->
-          <span class="text">Adopted 2 days ago</span>
-          <img src="slide_img/img2.jpg">
-        </div>
-  
-        <div class="mySlides fade">
-          <!-- <span class="numbertext">3 / 6</span> -->
-          <span class="text">Adopted last week</span>
-          <img src="slide_img/img3.jpg">
-        </div>
-  
-        <div class="mySlides fade">
-          <!-- <span class="numbertext">4 / 6</span> -->
-          <span class="text">Adopted last week</span>
-          <img src="slide_img/img4.jpg">
-        </div>
-  
-        <div class="mySlides fade">
-          <!-- <span class="numbertext">5 / 6</span> -->
-          <span class="text">Waiting for you</span>
-          <img src="slide_img/img5.jpg">
-        </div>
-  
-        <div class="mySlides fade">
-          <!-- <span class="numbertext">6 / 6</span> -->
-          <span class="text">Waiting for you</span>
-          <img src="slide_img/img6.jpg">
-        </div>
-  
+    </nav>
+  </div>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="slider">
+      <div class="mySlides fade">
+        <!-- <span class="numbertext">1 / 6</span> -->
+        <!-- <p><span class="text">Adopted Today</span></p> -->
+        <img src="slide_img/img1.jpg">
       </div>
-      <!-- Next and previous buttons -->
-      <div class="bullet-dots">
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="mySlides fade">
+        <!-- <span class="numbertext">2 / 6</span> -->
+        <!-- <span class="text">Adopted 2 days ago</span> -->
+        <img src="slide_img/img2.jpg">
       </div>
-</div>
+
+      <div class="mySlides fade">
+        <!-- <span class="numbertext">3 / 6</span> -->
+        <!-- <span class="text">Adopted last week</span> -->
+        <img src="slide_img/img3.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <!-- <span class="numbertext">4 / 6</span> -->
+        <!-- <span class="text">Adopted last week</span> -->
+        <img src="slide_img/img4.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <!-- <span class="numbertext">5 / 6</span> -->
+        <!-- <span class="text">Waiting for you</span> -->
+        <img src="slide_img/img5.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <!-- <span class="numbertext">6 / 6</span> -->
+        <!-- <span class="text">Waiting for you</span> -->
+        <img src="slide_img/img6.jpg">
+      </div>
+
+    </div>
+    <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+    <span class="next" onclick="plusSlides(1)">&#10095;</span>
+
+  </div>
 
   <!-- The dots/circles -->
   <!-- <div style="text-align:center">
@@ -97,30 +99,27 @@
     <div class="pets-grid">
       <div class="pet-img">
         <img src="./dg/AKITA2B.jpg" alt="">
-        <img src="./dg3/am.png" alt="">
-        <img src="./dg/chihuahua.jpg" alt="">
         <img src="./cat/ABS.jpg" alt="">
         <img src="./rab/FL.jpg" alt="">
+        <img src="./dg/BEAG.jpg" alt="">
       </div>
       <div class="pet-img">
-        <img src="./dg3/am.png" alt="">
-        <img src="./dg3/ID.png" alt="">
-        <img src="./cat3/SPY.png" alt="">
-        <img src="./dg3/GRF2.png" alt="">
         <img src="./dg/BX.jpg" alt="">
-      </div>
-      <div class="pet-img">
         <img src="./rab/NDR.jpg" alt="">
         <img src="./cat/PC.jpg" alt="">
         <img src="./dg/FBE.jpg" alt="">
-        <img src="./cat3/DR.png" alt="">
-        <img src="./dg/BEAG.jpg" alt="">
       </div>
     </div>
     <p><a href="adopt.html">Click to see more</a></p>
   </div>
 
+  <div id="footer">
+    <div class="footer">
+      <p>&#169 All rights resereved</p>
+    </div>
+  </div>
 
 </body>
-  <script type="text/javascript" src="script/index.js"></script>
+<script type="text/javascript" src="script/index.js"></script>
+
 </html>

@@ -6,67 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">     <link rel="stylesheet" href="style/nav-style.css">
     <link rel="stylesheet" type="text/css" href="style/nav-style.css">
     <link rel="stylesheet" type="text/css" href="style/style_form.css">
 </head>
 
 <body>
     <div class="navigation">
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="index.html"><img src="img/pp.png" alt="logo"></a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="adopt.html">Adopt</a></li>
-                <li><a href="training.html">Training</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li style="color: white; font-size: 1.5em;">|</li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="acopy">
-                  <div class="dropdown">
-                      About
-                    <div class="dropdown-content">
-                      <a class="anew" href="about.html">About Us</a>
-                      <a class="anew" href="success.html">Success Stories</a>
-                      <a class="anew" href="ourTeam.html">Our Team</a>
-                    </div>
+        <nav class="navbar nav-small">
+          <ul class="nav-list">
+              <li class="logo-hidden"><a href="index.html"><img src="img/pp.png" class="logo" alt="logo"></a></li>
+              <!-- <li class="logo-hidden show-nav" onclick="modNavbar()">show-nav</li> -->
+              <li><a href="index.html">Home</a></li>
+              <li><a href="adopt.html">Adopt</a></li>
+              <li><a href="training.html">Training</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li class="active"><a href="contact.html">Contact</a></li>
+              <li class="acopy">
+                <div class="dropdown">
+                    About
+                  <div class="dropdown-content">
+                    <a class="anew" href="about.html">About Us</a>
+                    <a class="anew" href="success.html">Success Stories</a>
+                    <a class="anew" href="ourTeam.html">Our Team</a>
                   </div>
-                </li>
-                <li style="color: white; font-size: 1.5em;">|</li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-            <!-- <div class="navbar right">
-              <input type="text" name="" id="search">
-              <button type="button" class="search-btn">
-               <div>
-                 <img src="img/search.png" height="15px" width="15px">
-               </div>
-              </button>
-            </div> -->
-        </nav>
-    </div>
+                </div>
+              </li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <!-- <li><img src="img/logo.png" onclick="modNavbar()" class="logo hidden-logo" alt=""></li> -->
+          </ul>
 
-    <div class="contact">
-        <div class="form">
-            <form action="#">
-                <h1 class="head">Ask Your Queries</h1>
-                <div class="box">
-                    <textarea name="query" id="query" cols="40" rows="5" placeholder=" Query"></textarea>
-                    <div class="ipbox">
-                        <input type="text" name="pet-type" required>
-                        <label for="pet-type">Pet type and breed</label>
-                    </div>
-                    <div class="ipbox">
-                        <input  type="email" name="email" required>
-                        <label for="">E-mail</label>
-                    </div>
-                </div>
-                <div class="submit">
-                    <input type="submit" name="submit" id="submit">
-                </div>
-            </form>
+      </nav>
+</div>
+<div class="contact-us">
+    <div class="left">
+        <h1>Contact Us</h1>
+        <h3>-- Get in touch --</h3>
+        <p><i class="fa fa-circle-user"></i> Contact No : +91 7610397102, +91 9977225142</p>
+        <p><i class="fa fa-location-dot"></i>  Address : 18 streat Vijay Nagar square,Indore( M.P.)</p>
+        <p><i class="fa fa-envelope"></i> Email : contact@sas.ac.in</p>
+        <div class="social-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
         </div>
     </div>
+    <div class="right">
+        <div class="contact">
+            <div class="form">
+                <form action="#">
+                    <h1 class="head">Ask Your Queries</h1>
+                    <div class="box">
+                        <div class="ipbox">
+                            <textarea name="query" id="query" cols="37" rows="6" placeholder=" Enter your query"></textarea>
+                            <!-- <label for="query">Query</label> -->
+                        </div>
+                        <div class="ipbox">
+                            <input type="text" name="pet-type" required>
+                            <label for="pet-type">Pet type and breed</label>
+                        </div>
+                        <div class="ipbox">
+                            <input  type="email" name="email" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" name="submit" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>
+    
 </body>
 
 </html>

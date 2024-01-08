@@ -1,10 +1,6 @@
 let slideIndex = 0;
 showSlides();
 
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -41,3 +37,24 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
+
+
+
+//////////////////////////////////
+
+function modNavbar() {
+  console.log("trigger");
+  var e = document.getElementsByClassName('navbar')[0].getElementsByTagName('li');
+  for(i in e){
+    console.log(e[i]);
+    // e[i].style.display = 'flex';
+    // e[i].style.flexDirection = 'column'
+  }
+  console.log(e);
+}
+
+
+
+
+
+

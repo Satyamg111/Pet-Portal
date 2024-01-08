@@ -1,444 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Adopt</title>
-    <link rel="stylesheet" href="style/nav-style.css">
-    <link rel="stylesheet" href="style/adopt.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt</title>
+  <link rel="stylesheet" href="style/nav-style.css">
+  <link rel="stylesheet" href="style/adopt.css">
 </head>
+
 <body>
   <div class="navigation">
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="index.html"><img src="img/pp.png" alt="logo"></a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="adopt.html">Adopt</a></li>
-            <li><a href="training.html">Training</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li style="color: white; font-size: 1.5em;">|</li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="acopy">
-              <div class="dropdown">
-                  About
-                <div class="dropdown-content">
-                  <a class="anew" href="about.html">About Us</a>
-                  <a class="anew" href="success.html">Success Stories</a>
-                  <a class="anew" href="ourTeam.html">Our Team</a>
-                </div>
-              </div>
-            </li>
-            <li style="color: white; font-size: 1.5em;">|</li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html">Register</a></li>
-        </ul>
+    <nav class="navbar nav-small">
+      <ul class="nav-list">
+        <li class="logo-hidden"><a href="index.html"><img src="img/pp.png" class="logo" alt="logo"></a></li>
+        <!-- <li class="logo-hidden show-nav" onclick="modNavbar()">show-nav</li> -->
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="adopt.html">Adopt</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="acopy">
+          <div class="dropdown">
+            About
+            <div class="dropdown-content">
+              <a class="anew" href="about.html">About Us</a>
+              <a class="anew" href="success.html">Success Stories</a>
+              <a class="anew" href="ourTeam.html">Our Team</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <!-- <li><img src="img/logo.png" onclick="modNavbar()" class="logo hidden-logo" alt=""></li> -->
+      </ul>
+
     </nav>
-</div>
+  </div>
 
-    <!-- <button type="button" class="btn btn-dark" onclick="fun()">Search</button> -->
-    <div class ="container">
-        <div class="row">
-            <div class="heading">
-                <h1>ADOPT US</h1>
-            </div>
-         </div>   
-            <div class="type-btn">
-                <div class="col d-flex justify-content-center">
-                   <button type="button" id="0" data-filter="*" onclick="func(0)" class="btn active">ALL</button>
-                   <button type="button" id="1" data-filter=".dog" onclick="func(1)" class="btn">DOGS</button>
-                   <button type="button" id="2" data-filter=".cat" onclick="func(2)" class="btn">CATS</button>
-                   <button type="button"  id="3" data-filter=".rabbit" onclick="func(3)" class="btn">RABBITS</button>
-                   <span><input type="text" id="search"><input type="submit" value="Search" class="btn" onclick="searchPet()"></span>
-                  </div>
-            </div>
-        </div>
-        <div class="row" id="row">
-            <div class="dog">
-              <div class="product-item">
-                <div class="product-img">
-                    <img src="dg/am.jpg" class="img-fluid pet-text mx-auto">
-                </div>
-                <div class="pet-detail"></div>
-                    <p><span class="breed-text">BREED : Alaskan Malamute</span></p>
-                    <p><span class="pet-text">Capsio</span></p>
-              </div>
-            </div>
-            
-            <div class="cat">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="cat/Ragdoll.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Ragdoll</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/chihuahua.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : chihuahua</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="rabbit">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="rab/PR.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Polish rabbit</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/AM2.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Alaskan Malamute</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              
-              <div class="  dog ">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/AKTA2.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <h5 class="breed-text">BREED : AKITA</h5>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/AKITA2B.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : AKITA</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/SAMC.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Samoyed</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/SAMC2.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Samoyed</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/RLD.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Retrievers(Labrador)</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/RLD2.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Retrievers(Labrador)</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/RLD3.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Retrievers(Labrador)</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/FBE.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : French Bulldogs</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/FBE2.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : French Bulldogs</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/GRF.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Retrievers(Golden)</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/GRF2.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Retrievers(Golden)</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/GS1.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : German Shepherd</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/GS2.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : German Shepherd</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div><div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/BEAG.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Beagles</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div><div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/BEAG2.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Beagles</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div><div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/BD.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Bulldogs</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div><div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/SH.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Siberian Husky</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div><div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/SCH.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Shichon</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div><div class="  dog">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="dg/BX.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : BOXER</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  cat">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="cat/ABS.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Abyssinian</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  cat">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="cat/AS.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : American Shorthair </span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  cat">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="cat/BS.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : British Shorthair</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  cat">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="cat/DR.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Devon Rex</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  cat">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="cat/ES.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Exotic Shorthair</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  cat">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="cat/Maine-Coon-Cat.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Maine Coon</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div> 
-              <div class="  cat">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="cat/PC.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Persian</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              
-              <div class="  cat">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="cat/SF.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Scottish Fold</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  cat">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="cat/SPY.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Sphynx</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  rabbit">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="rab/AR.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Angora rabbit</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  rabbit">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="rab/CGR.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Checkered Giant rabbit</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              
-              <div class="  rabbit">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="rab/FL.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : French Lop</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              <div class="  rabbit">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="rab/NDR.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Netherland Dwarf rabbit</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-              
-              <div class="  rabbit">
-                <div class="product-item">
-                  <div class="product-img">
-                      <img src="rab/RR.jpg" class="img-fluid pet-text mx-auto">
-                  </div>
-                  <div class="pet-detail"></div>
-                      <span class="breed-text">BREED : Rex rabbit</span>
-                      <span class="pet-text">Capsio</span>
-                </div>
-              </div>
-             
-
-        </div>
+  <!-- <button type="button" class="btn btn-dark" onclick="fun()">Search</button> -->
+  <div class="container">
+    <div class="row">
+      <div class="heading">
+        <h1>ADOPT US</h1>
+      </div>
+      <!-- <i style="color: red; font-size: 20px; background-color: black;" class="fa fa-dog"></i>s -->
     </div>
-    <!-- isotope plugin -->
-    <script src="script/adopt.js"></script>
+    <!-- <i class="fa fa-dog"></i>
+          <i class="fa fa-dog"></i>
+          <i class="fa fa-cat"></i>
+          <i class="fa fa-rabbit"></i> -->
+    <div class="row type-btn">
+      <div class="col d-flex justify-content-center">
+        <button type="button" id="0" data-filter="*" onclick="func(0)" class="btn active"><img src="/img/all-pets.png"
+            alt="">ALL</button>
+        <button type="button" id="1" data-filter=".dog" onclick="func(1)" class="btn"><img src="/img/dog.png"
+            alt="">Dogs</button>
+        <button type="button" id="2" data-filter=".cat" onclick="func(2)" class="btn"></i><img src="/img/happy.png"
+            alt="">Cats</button>
+        <button type="button" id="3" data-filter=".rabbit" onclick="func(3)" class="btn"><img src="/img/love.png"
+            alt="">Rabbits</button>
+        <!-- <span><input type="text" id="search" placeholder="Enter pet type"><input type="submit" value="Search"
+            class="search-btn" onclick="searchPet()"></span> -->
+      </div>
+      <div class="search">
+          <span><input type="text" id="search" placeholder="Enter pet type"><input type="submit" value="Search"
+            class="search-btn" onclick="searchPet()"></span>
+      </div>
+    </div>
+    <div class="row">
+      <div id="form-container" class="form-container">
+
+        <form action="#">
+          <div class="box">
+            <h2>Enter your details</h2>
+            <i class="fa fa-xmarks"></i>
+            <div class="ipbox">
+              <label for="">First Name</label>
+              <input class="input-text" type="text" required>
+            </div>
+            <div class="ipbox">
+              <label for="">Last Name</label>
+              <input class="input-text" type="text" required>
+            </div>
+            <div class="ipbox">
+              <label for="">House no.</label>
+              <input class="input-text" type="text" required>
+            </div>
+            <div class="ipbox">
+              <label for="">Street</label>
+              <input class="input-text" type="text" required>
+            </div>
+            <div class="ipbox">
+              <label for="">City</label>
+              <input class="input-text" type="text" required>
+            </div>
+            <div class="ipbox">
+              <label for="">State</label>
+              <input class="input-text" type="text" required>
+            </div>
+            <div class="ipbox">
+              <label for="">Pincode</label>
+              <input class="input-text" type="text" required>
+            </div>
+            <button class="submit-btn" type="submit">Submit</button>
+          </div>
+          <button class="close-btn" onclick="openAdoptForm(0)">X</button>
+        </form>
+
+      </div>
+    </div>
+    <div class="row" id="row">
+      <div class="dog">
+        <div class="product-item">
+          <!-- <div id="detail-text" class="detail-text">
+            <h1>detail</h1>
+            <h4>type : Dog</h4>
+            <h4>Breed : Alaskan Malamute</h4>
+            <p>Age : 5 year</p>
+            <p><a href="contact.html">Contect us</a> for more details</p>
+            <button onclick="closeDetail(0)">close</button>
+          </div> -->
+          <div class="product-img">
+            <img src="dg/am.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <p><span class="breed-text">BREED : Alaskan Malamute</span></p>
+            <p><span class="pet-text">Capsio</span></p>
+          </div>
+
+          <div class="product-item-btn">
+            <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+            <!-- <p class="detail-btn" onclick="openDetail(0)">Details</p> -->
+          </div>
+
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="product-item">
+          <!-- <div id="detail-text" class="detail-text">
+            <h1>detail</h1>
+            <h4>type : Dog</h4>
+            <h4>Breed : Alaskan Malamute</h4>
+            <p>Age : 5 year</p>
+            <p><a href="contact.html">Contect us</a> for more details</p>
+            <button onclick="closeDetail(1)">close</button>
+          </div> -->
+          <div class="product-img">
+            <img src="cat/Ragdoll.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Ragdoll</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <div class="product-item-btn">
+            <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+            <!-- <p class="detail-btn" onclick="openDetail(1)">Details</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/chihuahua.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : chihuahua</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="rabbit">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="rab/PR.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Polish rabbit</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/AM2.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Alaskan Malamute</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+
+      <div class="  dog ">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/AKTA2.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <h5 class="breed-text">BREED : AKITA</h5>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/AKITA2B.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : AKITA</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/SAMC.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Samoyed</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/SAMC2.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Samoyed</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/RLD.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Retrievers(Labrador)</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/RLD2.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Retrievers(Labrador)</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/RLD3.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Retrievers(Labrador)</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/FBE.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : French Bulldogs</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/FBE2.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : French Bulldogs</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/GRF.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Retrievers(Golden)</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/GRF2.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Retrievers(Golden)</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/GS1.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : German Shepherd</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/GS2.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : German Shepherd</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/BEAG.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Beagles</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/BEAG2.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Beagles</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/BD.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Bulldogs</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/SH.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Siberian Husky</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/SCH.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Shichon</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  dog">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="dg/BX.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : BOXER</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  cat">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="cat/ABS.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Abyssinian</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  cat">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="cat/AS.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : American Shorthair </span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  cat">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="cat/BS.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : British Shorthair</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  cat">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="cat/DR.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Devon Rex</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  cat">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="cat/ES.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Exotic Shorthair</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  cat">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="cat/Maine-Coon-Cat.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Maine Coon</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  cat">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="cat/PC.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Persian</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+
+      <div class="  cat">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="cat/SF.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Scottish Fold</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  cat">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="cat/SPY.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Sphynx</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+
+        </div>
+      </div>
+      <div class="  rabbit">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="rab/AR.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Angora rabbit</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  rabbit">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="rab/CGR.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Checkered Giant rabbit</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+
+      <div class="  rabbit">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="rab/FL.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : French Lop</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+      <div class="  rabbit">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="rab/NDR.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Netherland Dwarf rabbit</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p class="adopt-btn" onclick="openAdoptForm(1)">Adopt me</p>
+        </div>
+      </div>
+
+      <div class="  rabbit">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="rab/RR.jpg" class="img-fluid pet-text mx-auto">
+          </div>
+          <div class="pet-detail">
+            <span class="breed-text">BREED : Rex rabbit</span>
+            <span class="pet-text">Capsio</span>
+          </div>
+          <p onclick="openAdoptForm(1)" class="adopt-btn">Adopt me</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="form-container" class="form-container">
+          <form action="#">
+            <div class="box">
+                <div class="ipbox">
+                  <input type="text" required>
+                  <label for="">Name</label>
+              </div>
+              <div class="ipbox">
+                  <input type="text" required>
+                  <label for="">Username/E-mail</label>
+              </div>
+              <button onclick="openAdoptForm(0)">close</button>
+            </div>
+          </form>
+        </div> -->
+
+  </div>
+
+  <script src="script/adopt.js"></script>
 </body>
+
 </html>

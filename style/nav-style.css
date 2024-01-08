@@ -1,5 +1,11 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+    background: white url('/img/back1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: hard-light;
 }
 .navigation{
     width: 100%;
@@ -10,7 +16,7 @@ body{
     background: #2B2B2B url('../img/nav-back.jpg') ;
     background-repeat: repeat-x round;
     background-blend-mode: soft-light;
-    z-index: 1;
+    z-index: 10;
 
 }
 nav {   
@@ -34,26 +40,27 @@ nav {
     transition: 0.2s ease-in-out 0s;
 }
 .nav-list img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .nav-list a, .acopy{
     text-decoration: none;
     font-size: 19px;
     color: beige;
 }
-.nav-list a:hover, .acopy:hover{
-    text-decoration-line: underline;
-    text-shadow: 0px 0px 5px indianred;
-}
 .nav-list li{
     list-style: none;
-    padding: 20px 20px;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding: 5px 15px;
+    margin: 10px 12px;
+    border-radius: 5px;
     transition: 0.2s ease-in-out 0s;
 }
-.nav-list li:hover{
-    transform: scale(1.1);
+.nav-list .active{
+    background-color: rgba(255, 166, 0, 0.884);
+    border-radius: 5px;
+}
+.nav-list li:hover:not(.logo-hidden){
+    background-color: rgba(255, 166, 0, 0.884);
+    border-radius: 5px;
 }
 
  /* Dropdown Button */
@@ -103,4 +110,38 @@ nav {
   
   .divider {
       margin-bottom: 60px;
+  }
+
+  @media only screen and (max-width:950px){
+    .nav-list{
+        justify-content: center;
+    }
+    .nav-list li{
+        padding: 5px 10px;
+        margin: 10px 5px;
+    }
+    .nav-list li a{
+        font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width:750px){
+    .navigation{
+        width: 100%;
+    }
+    .navbar{
+        background: #2B2B2B;
+        /* top: -100%; */
+    }
+    /* .nav-list{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    } */
+    .nav-list li{
+        padding: 10px;
+    }
+    .nav-list li:not(.logo-hidden) {
+        display: none;
+    }
   }

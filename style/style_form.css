@@ -2,34 +2,103 @@
    margin: 0;
    padding: 0;
 }
+.contact-us {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   /* background-color: #f82929; */
+}
+.contact-us .left{
+   width: 40%;
+   height: 300px;
+   /* background-color: #999; */
+   margin: 20px 30px;
+}
+.contact-us .left h1{
+   font-size: 50px;
+   text-align: center;
+   color: #ffffff
+}
+.contact-us .left h3{
+   color: #f31e5ef6;
+   text-align: center;
+}
+.contact-us .left p{
+   font-size: 20px;
+   margin: 15px 20px;
+   color: #ffffff
+}
+.contact-us .left p:hover i{
+   color: #eb1616;
+}
+.contact-us .left i{
+   font-size: 18px;
+   margin: 0 2px;
+}
+.contact-us .social-icons {
+   text-align: center;
+}
+.contact-us .social-icons i{
+   font-size: 30px;
+   margin: 10px 10px;
+}
+.contact-us .fa-instagram,.fa-facebook,.fa-google-plus-g {
+   transition: all 0.2s;
+}
+.contact-us .left .fa-instagram:hover{
+   transform: translateY(-5px);
+   color: #eb1655;
+}
+.contact-us .left .fa-facebook:hover{
+   transform: translateY(-5px);
+   color: #3d16eb;
+}
+.contact-us .left .fa-google-plus-g:hover{
+   transform: translateY(-5px);
+   color: #eb1616;
+}
+.contact-us .right{
+   width: 50%;
+} 
 .contact {
    width: 100%;
-   position: absolute;
    margin-top: 2%;
 }
 .form{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3% 8%;
+    margin: 0 auto;
+    padding: 0 5% 20px;
     border: solid black 1px;
     border-radius: 8px;
-    box-shadow: 5px 5px 5px #999;
+    box-shadow: 2px 5px 15px 1px #999 , inset 5px 2px 20px 1px #999 ;
     text-align: center;
     width: 300px;
+    /* background: rgba(0, 0, 0, 0.199); */
+    backdrop-filter:url(#filter) blur(5px);
+}
+.form .head {
+   width: fit-content;
+    display: block;
+    margin: 0 auto;
+    padding: 6px 12px;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 28px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.774);
 }
 .box {
   margin-top: 30px;
+  padding: 10px 0;
 }
-
 .box .ipbox{
    position: relative;
+   margin-top: 5px;
 }
 .box .ipbox input{
    width:100%;
    padding: 10px 0px;
    font-size: 16px;
-   color: #380e0e;
+   color: white;
    letter-spacing: 1px;
    margin-bottom: 30px;
    border: none;
@@ -44,17 +113,18 @@ label{
    letter-spacing: 1px;
    padding: 10px 0px;
    font-size: 16px;
-   color: #330369;
+   color: white;
    
 }
 .box .ipbox label{
+   z-index: -1;
    position: absolute;
    top: 0;
    left: 0;
    letter-spacing: 1px;
    padding: 10px 0px;
    font-size: 16px;
-   color: #330369;
+   color: white;
    transition: .5s;
 }
 .box .ipbox input:focus ~ label,.box .ipbox input:valid ~ label{
@@ -69,7 +139,7 @@ label{
     border: solid 1.5px seagreen;
     border-radius: 20px;
     background-color: white;
-    margin: 20px auto;
+    margin: 15px auto;
     color: forestgreen;
     transition: 0.2s ease-in-out 0s;
 }
@@ -77,6 +147,10 @@ label{
     background-color: seagreen;
     color: white;
     transform: scale(1.1);
+}
+.form a{
+   color: white;
+   padding: 10px;
 }
 .forgotpass {
    margin-top: -12px;

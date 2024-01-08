@@ -1,13 +1,14 @@
 function searchPet() {
     var searchVal = document.getElementById('search').value;
-    console.log(searchVal);
-    if(searchVal === 'dog') {
+    console.log(searchVal.toLowerCase());
+    searchVal = searchVal.toLowerCase();
+    if(searchVal.includes('dog')) {
         func(1);
     }
-    else if(searchVal === 'cat') {
+    else if(searchVal.includes('cat')) {
         func(2);
     }
-    else if(searchVal === 'rabbit') {
+    else if(searchVal.includes('rabbit')) {
         func(3);
     }
 }
@@ -57,3 +58,33 @@ function removeClass(collection) {
         collection[i].classList.remove('hidden');
     }
 }
+
+
+function openDetail(detail) {
+    console.log(detail);
+    
+    var elements = document.querySelectorAll('.detail-text');
+    var visEle = document.querySelectorAll('.visible');
+    // elements[detail].style.display = 'block';
+    if(visEle.length > 0)
+        visEle[0].classList.remove('visible');
+    elements[detail].classList.add('visible');
+}
+function closeDetail(detail) {
+    var elements = document.querySelectorAll('.detail-text');
+    var visEle = document.querySelectorAll('.visible');
+    visEle[0].classList.remove('visible');
+}
+
+
+  function openAdoptForm(value) {
+        if(value) {
+            var visEle = document.querySelectorAll('.visible');
+            if(visEle.length > 0)
+            visEle[0].classList.remove('visible');
+            document.getElementById('form-container').style.display = 'block';
+        }
+        else{
+            document.getElementById('form-container').style.display = 'none';
+        }
+  }
