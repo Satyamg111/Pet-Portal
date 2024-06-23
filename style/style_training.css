@@ -61,17 +61,18 @@
     border-radius: 30px;
     box-shadow: 5px 5px 10px #4d4b4b;
     cursor: pointer;
+    transition: all .5s ;
 }
+
 .enquiry a{
     text-decoration: none;
     color: #303030;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .enquiry button:hover{
-    font-size: 21px;
     color: white;
     background-color: #837e7e;
-    border: none;
+    /* border: none; */
 }
 .dog-train{
     margin-top: 0;

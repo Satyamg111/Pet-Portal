@@ -41,10 +41,12 @@
     font-size: 16px;
 }
 .search-btn {
+    width: 100px;
     padding: 8px 10px;
     margin: 0 10px;
     background-color: rgb(240, 235, 235);
-    color: rgb(255, 170, 11);
+    color: rgb(55, 55, 54);
+    font-weight: 600;
     border-radius: 15px;
 }
 .search-btn:hover {
@@ -64,11 +66,18 @@
     width: 100%;
     border:1px solid #ebebeb;
     border-radius: 4px;
+    object-fit: fill;
+}
+.product-img{
+    overflow: hidden;
 }
 .product-img img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    transition: transform .5s;
+}
+.product-img:hover img{
+    transform: scale(1.3);
 }
 
 .pet-detail .breed-text,.pet-text p{
@@ -87,6 +96,7 @@
     background-color: orange;
     width: 70%;
     font-size: 16px;
+    font-weight: 550;
     margin: 10px 10px;
     padding: 5px 0;
     border: 2px solid orange;
@@ -96,7 +106,8 @@
 }
 .product-item .adopt-btn:hover,.detail-btn:hover{
     background: none;
-    box-shadow: 1px 1px 20px 0.5px;
+    color: orange;
+    /* box-shadow: 1px 1px 20px 0.5px; */
 }
 
 .detail-text {
@@ -144,7 +155,8 @@
     margin: 0 auto;
     width: 480px;
     padding: 20px 0;
-    background-color: #ff0051de;
+    background-color: rgba(0, 0, 0, 0.726);
+    backdrop-filter:url(#filter) blur(10px);
     border-radius: 20px;
     box-shadow: inset  5px 5px 10px rgba(0, 0, 0, 0.726), 5px 5px 10px;
 }
@@ -178,7 +190,7 @@
     font-weight: 500;
     margin: 0 auto;
     font-size: 14px;
-    background-color: #ff00515b;
+    background-color: #f5eef15b;
     border-radius: 10px;
 }
 .form-container .close-btn {
@@ -187,13 +199,13 @@
     color: black;
     font-weight: 500;
     font-size: 16px;
-    background-color: #ff00515b;
-    border: 2px solid #ff004f;
+    background-color: #f5eef15b;
+    border: 2px solid black;
     border-radius: 50%;
     transition: 0.3s;
 }
 .form-container .close-btn:hover {
-    background-color: #ff0051e5;
+    background-color: #6a6868be;
     border: 2px solid rgb(255, 255, 255);
     color: #ebebeb;
     border-radius: 50%;
